@@ -32,6 +32,14 @@ const customizations = {
         'font-lg': '64px',
         'font-xl': '84px',
       },
+      fontWeight: {
+        'light': 300,
+        'normal': 400,
+        'medium': 500,
+        'sound': 600,
+        'bold': 700,
+        'extrabold': 800,
+      },
       // padding: {
       //   '10px': '10px',
       //   '20px': '20px',
