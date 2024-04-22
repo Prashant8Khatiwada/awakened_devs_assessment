@@ -8,6 +8,7 @@ import Pricing from "./Pricing";
 import Blogs from "./Blogs";
 import Travel from "./Travel";
 import Testimonials from "./Testimonials";
+import Footer from "./footer/Footer";
 const Home = () => {
   return (
     <>
@@ -29,6 +30,7 @@ const Home = () => {
       {/* trip  */}
       <Travel />
       <Testimonials />
+      <Footer />
     </>
   );
 };
