@@ -3,20 +3,33 @@ import React from "react";
 import background_image from "../../public/bg.jpeg";
 import Header from "./Header";
 import HeroSection from "./HeroSection";
+import Explore from "./Explore";
+import Pricing from "./Pricing";
+import Blogs from "./Blogs";
+import Travel from "./Travel";
+import Testimonials from "./Testimonials";
 const Home = () => {
   return (
-    <div className="h-screen w-screen relative">
-      <Image
-        src={background_image}
-        alt="Your Image"
-        layout="fill"
-        objectFit="cover"
-        objectPosition="top"
-      />
-      <div className="absolute inset-0 bg-black opacity-20"></div>
-      <Header />
-      <HeroSection />
-    </div>
+    <>
+      <div className="h-screen w-screen relative mb-11">
+        <Image
+          src={background_image}
+          alt="Your Image"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="top"
+        />
+        <div className="absolute inset-0 bg-black opacity-20"></div>
+        <Header />
+        <HeroSection />
+      </div>
+      <Explore />
+      <Pricing />
+      <Blogs />
+      {/* trip  */}
+      <Travel />
+      <Testimonials />
+    </>
   );
 };
 
