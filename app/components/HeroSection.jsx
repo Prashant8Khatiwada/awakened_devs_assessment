@@ -18,16 +18,16 @@ const HeroSection = () => {
       {/* Booking section  */}
       <div className="h-[150px] w-[78%] flex ">
         {/* left section  */}
-        <div className="bg-color-primary h-full w-[80%] grid grid-flow-col place-items-center pl-28 ">
+        <div className="bg-color-primary h-full w-[80%] grid grid-flow-col place-items-center pl-28 gap-0">
           <div>
             <p className="text-color-secondary-light">DESTINATION</p>
-            <input className="block appearance-none w-32 bg-transparent border-b border-gray-500  focus:outline-none  text-color-secondary" />
+            <input className="block appearance-none w-32 bg-transparent border-b border-gray-500  focus:outline-none  text-color-secondary m-0 p-0" />
           </div>
 
           <div>
             <p className="text-color-secondary-light">PERSON</p>
             <select
-              className="block appearance-none w-20 bg-transparent border-b border-gray-500  focus:outline-none  text-color-secondary"
+              className="block appearance-none w-20 bg-transparent border-b border-gray-500  focus:outline-none  text-color-secondary m-0 p-0"
               pattern="[0-9]+"
             >
               <option value={0}> 0</option>
@@ -40,7 +40,7 @@ const HeroSection = () => {
           <div>
             <p className="text-color-secondary-light">CHECK IN</p>
             <input
-              className="block appearance-none w-full bg-transparent border-b border-gray-500  focus:outline-none  text-color-secondary"
+              className="block appearance-none w-full bg-transparent border-b border-gray-500  focus:outline-none  text-color-secondary m-0 p-0"
               type="date"
               name="check-in"
             />
@@ -49,7 +49,7 @@ const HeroSection = () => {
           <div>
             <p className="text-color-secondary-light">CHECK OUT</p>
             <input
-              className="block appearance-none w-full bg-transparent border-b border-gray-500  focus:outline-none  text-color-secondary"
+              className="block appearance-none w-full bg-transparent border-b border-gray-500  focus:outline-none  text-color-secondary m-0 p-0"
               type="date"
               name="check-in"
             />
