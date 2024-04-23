@@ -1,6 +1,7 @@
 import React from "react";
 import Blog from "../../public/blog.png";
 import Image from "next/image";
+import rightArrow from "../../public/svg/Arrow 1.png";
 
 const Blogs = () => {
   return (
@@ -46,8 +47,9 @@ const Blogs = () => {
               pursue pleasure rationally encounter consequences that are
               extremly painful. Nor again is there anyone who loves or pursues.
             </article>
-            <p style={{ color: "#FF7757", fontSize: "24px" }}>
-              Read More right arrow
+            <p className="text-font-md flex items-center gap-2 text-color-btn-primary">
+              Read More
+              <Image className="ml-2" src={rightArrow} alt="RightArrow" />
             </p>
           </div>
         </div>

@@ -5,6 +5,8 @@ import Explore1 from "../../public/explore/explore-1.jpeg";
 import Explore2 from "../../public/explore/explore-2.jpeg";
 import Explore3 from "../../public/explore/explore-3.jpeg";
 import Explore4 from "../../public/explore/explore-4.jpeg";
+import leftArrow from "../../public/svg/left.png";
+import rightArrow from "../../public/svg/right.png";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -32,11 +34,11 @@ const Explore = () => {
             </p>
           </div>
           <div className="text-color-primary flex gap-5 self-end sml:hidden ">
-            <button className="custom-prev bg-color-secondary rounded-md px-4 py-2">
-              Left
+            <button className="custom-prev bg-color-secondary rounded-md px-5 py-3">
+              <Image src={leftArrow} alt="Left Arrow" />
             </button>
-            <button className="custom-next bg-color-btn-primary rounded-md px-4 py-2">
-              Right
+            <button className="custom-next bg-color-btn-primary rounded-md px-5 py-3">
+              <Image src={rightArrow} alt="Right Arrow" />
             </button>
           </div>
         </div>
@@ -145,11 +147,11 @@ const Explore = () => {
           </Swiper>
         </div>
         <div className="text-color-primary hidden gap-5 self-center sml:flex mt-10">
-          <button className="custom-prev bg-color-secondary rounded-md px-4 py-2">
-            Left
+          <button className="custom-prev bg-color-secondary rounded-md px-5 py-3">
+            <Image src={leftArrow} alt="Left Arrow" />
           </button>
-          <button className="custom-next bg-color-btn-primary rounded-md px-4 py-2">
-            Right
+          <button className="custom-next bg-color-btn-primary rounded-md px-5 py-3">
+            <Image src={rightArrow} alt="Right Arrow" />
           </button>
         </div>
       </div>

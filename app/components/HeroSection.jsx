@@ -1,4 +1,6 @@
 import React from "react";
+import RightArrow from "../../public/svg/Arrow 1.svg";
+import Image from "next/image";
 
 const HeroSection = () => {
   return (
@@ -61,7 +63,7 @@ const HeroSection = () => {
           <div className="text-5xl mid:text-4xl">
             Book <br /> Now
           </div>
-          <div>right arrow</div>
+          <Image src={RightArrow} alt="Right Arrow" />
         </div>
       </div>
     </div>

@@ -4,6 +4,8 @@ import gal1 from "../../public/gallery/gal-1.png";
 import gal2 from "../../public/gallery/gal-2.png";
 import gal3 from "../../public/gallery/gal-3.png";
 import gal4 from "../../public/gallery/gal-4.png";
+import leftArrow from "../../public/svg/left.png";
+import rightArrow from "../../public/svg/right.png";
 import Image from "next/image";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -32,11 +34,11 @@ const Travel = () => {
           </div>
 
           <div className="text-color-primary flex gap-5 self-end">
-            <button className=" custom-prev bg-color-secondary rounded-md px-4 py-2">
-              Left
+            <button className="custom-prev bg-color-secondary rounded-md px-5 py-3">
+              <Image src={leftArrow} alt="Left Arrow" />
             </button>
-            <button className="custom-next bg-color-btn-primary rounded-md px-4 py-2">
-              Right
+            <button className="custom-next bg-color-btn-primary rounded-md px-5 py-3">
+              <Image src={rightArrow} alt="Right Arrow" />
             </button>
           </div>
         </div>

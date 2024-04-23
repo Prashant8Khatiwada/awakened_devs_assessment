@@ -4,6 +4,8 @@ import React from "react";
 import pimg1 from "../../public/pricing/pimg-1.jpg";
 import pimg2 from "../../public/pricing/pimg-2.jpg";
 import pimg3 from "../../public/pricing/pimg-3.jpg";
+import leftArrow from "../../public/svg/left.png";
+import rightArrow from "../../public/svg/right.png";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -15,11 +17,11 @@ const Pricing = () => {
         {/* Title Part  */}
         <div className="flex justify-between ">
           <div className=" text-color-primary flex gap-5 self-end">
-            <button className="custom-prev bg-color-secondary rounded-md px-4 py-2">
-              Left
+            <button className="custom-prev bg-color-secondary rounded-md px-5 py-3">
+              <Image src={leftArrow} alt="Left Arrow" />
             </button>
-            <button className="custom-next bg-color-btn-primary rounded-md px-4 py-2">
-              Right
+            <button className="custom-next bg-color-btn-primary rounded-md px-5 py-3">
+              <Image src={rightArrow} alt="Right Arrow" />
             </button>
           </div>
 

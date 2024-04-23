@@ -4,6 +4,7 @@ import travel1 from "../../../public/travel/travel1.png";
 import travel2 from "../../../public/travel/travel2.png";
 import travel3 from "../../../public/travel/travel1.png";
 import travel4 from "../../../public/travel/travel4.png";
+import Star from "../../../public/svg/star.png";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -23,7 +24,13 @@ const SlidingTrip = () => {
             </p>
             <h2 className="text-[28px]">Paris City Tour</h2>
             <div className="text-font-sm flex justify-between">
-              <div>Rating</div>
+              <div className="flex gap-2">
+                <Image src={Star} alt="star" />
+                <Image src={Star} alt="star" />
+                <Image src={Star} alt="star" />
+                <Image src={Star} alt="star" />
+                <Image src={Star} alt="star" />
+              </div>
               <span> 7 Days Tour</span>
             </div>
           </div>
