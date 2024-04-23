@@ -44,30 +44,49 @@ const Pricing = () => {
         </div>
 
         {/* Images Part  */}
-        <div className="w-full mt-20 h-auto flex gap-5">
+        <div className="mt-20 flex gap-5  ">
           <Swiper
             modules={[Navigation]}
             navigation={{
               nextEl: ".custom-next",
               prevEl: ".custom-prev",
             }}
-            spaceBetween={50}
-            slidesPerView={3}
+            // spaceBetween={50}
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+              },
+              768: {
+                slidesPerView: 1,
+              },
+              1152: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+              1440: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+              1992: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+            }}
           >
             <SwiperSlide>
-              <div className="w-auto h-auto flex flex-col  bg-[#FFF8F1] rounded-[26px] ">
+              <div className="w-full  lrg:w-[0%] h-[629px] flex flex-col  bg-[#FFF8F1] rounded-[26px] ">
                 {/* image part  */}
-                <div className="h-[286px] w-full rounded-tl-[26px] rounded-tr-[26px] overflow-hidden">
-                  <Image src={pimg1} alt="Pricing-1" width={497} height={286} />
+                <div className="h-[286px] rounded-tl-[26px] rounded-tr-[26px] overflow-hidden">
+                  <Image src={pimg1} alt="Pricing-1" />
                 </div>
 
                 {/* description part  */}
-                <div className="flex flex-col gap-3  px-[24px] py-[40px] ">
-                  <h3 className="text-color-secondary-light text-[28px]">
+                <div className="flex flex-col gap-3 px-[24px] py-[40px] h-[343px]  ">
+                  <h3 className="text-color-secondary-light text-[28px] lrg:text-[22px]">
                     Listbon, Portugal
                   </h3>
                   <div>rating</div>
-                  <article className="text-font-sm">
+                  <article className="text-font-sm lrg:text[14px]">
                     5 nights and 4 days in 5 star hotel, breakfast and lunch
                     included. Very popular during the renaissance. Passage and
                     going through the cites of the world in classical
@@ -75,13 +94,13 @@ const Pricing = () => {
                   </article>
 
                   <div className="flex justify-between items-center">
-                    <p className="text-[20px] text-color-secondary-light flex items-center gap-2">
+                    <p className="text-[20px] lrg:text-[16px] text-color-secondary-light flex items-center gap-2">
                       From
-                      <span className="text-color-btn-primary text-[40px]">
+                      <span className="text-color-btn-primary text-[40px] lrg:text-[32px]">
                         $250
                       </span>
                     </p>
-                    <button className="bg-color-btn-primary rounded-md px-[25px] py-[12.5px] text-color-primary self-end">
+                    <button className="bg-color-btn-primary rounded-md px-[25px] py-[12.5px] lrg:px-[20px] lrg:py-[10px] text-color-primary self-end">
                       Details
                     </button>
                   </div>
@@ -89,19 +108,19 @@ const Pricing = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="w-auto h-auto flex flex-col  bg-[#FFF8F1] rounded-[26px] ">
+              <div className="w-full lrg:w-[0%] h-[629px] flex flex-col  bg-[#FFF8F1] rounded-[26px] ">
                 {/* image part  */}
-                <div className="h-[286px] w-full rounded-tl-[26px] rounded-tr-[26px] overflow-hidden">
-                  <Image src={pimg2} alt="Pricing-2" width={497} height={286} />
+                <div className="h-[286px] rounded-tl-[26px] rounded-tr-[26px] overflow-hidden">
+                  <Image src={pimg1} alt="Pricing-1" />
                 </div>
 
                 {/* description part  */}
-                <div className="flex flex-col gap-3  px-[24px] py-[40px] ">
-                  <h3 className="text-color-secondary-light text-[28px]">
+                <div className="flex flex-col gap-3 px-[24px] py-[40px] h-[343px]  ">
+                  <h3 className="text-color-secondary-light text-[28px] lrg:text-[22px]">
                     Listbon, Portugal
                   </h3>
                   <div>rating</div>
-                  <article className="text-font-sm">
+                  <article className="text-font-sm lrg:text[14px]">
                     5 nights and 4 days in 5 star hotel, breakfast and lunch
                     included. Very popular during the renaissance. Passage and
                     going through the cites of the world in classical
@@ -109,33 +128,33 @@ const Pricing = () => {
                   </article>
 
                   <div className="flex justify-between items-center">
-                    <p className="text-[20px] text-color-secondary-light flex items-center gap-2">
+                    <p className="text-[20px] lrg:text-[16px] text-color-secondary-light flex items-center gap-2">
                       From
-                      <span className="text-color-btn-primary text-[40px]">
+                      <span className="text-color-btn-primary text-[40px] lrg:text-[32px]">
                         $250
                       </span>
                     </p>
-                    <button className="bg-color-btn-primary rounded-md px-[25px] py-[12.5px] text-color-primary self-end">
+                    <button className="bg-color-btn-primary rounded-md px-[25px] py-[12.5px] lrg:px-[20px] lrg:py-[10px] text-color-primary self-end">
                       Details
                     </button>
                   </div>
                 </div>
               </div>
-            </SwiperSlide>
+            </SwiperSlide>{" "}
             <SwiperSlide>
-              <div className="w-auto h-auto flex flex-col  bg-[#FFF8F1] rounded-[26px] ">
+              <div className="w-full lrg:w-[0%] h-[629px] flex flex-col  bg-[#FFF8F1] rounded-[26px] ">
                 {/* image part  */}
-                <div className="h-[286px] w-full rounded-tl-[26px] rounded-tr-[26px] overflow-hidden">
-                  <Image src={pimg3} alt="Pricing-3" width={497} height={286} />
+                <div className="h-[286px] rounded-tl-[26px] rounded-tr-[26px] overflow-hidden">
+                  <Image src={pimg1} alt="Pricing-1" />
                 </div>
 
                 {/* description part  */}
-                <div className="flex flex-col gap-3  px-[24px] py-[40px] ">
-                  <h3 className="text-color-secondary-light text-[28px]">
+                <div className="flex flex-col gap-3 px-[24px] py-[40px] h-[343px]  ">
+                  <h3 className="text-color-secondary-light text-[28px] lrg:text-[22px]">
                     Listbon, Portugal
                   </h3>
                   <div>rating</div>
-                  <article className="text-font-sm">
+                  <article className="text-font-sm lrg:text[14px]">
                     5 nights and 4 days in 5 star hotel, breakfast and lunch
                     included. Very popular during the renaissance. Passage and
                     going through the cites of the world in classical
@@ -143,33 +162,33 @@ const Pricing = () => {
                   </article>
 
                   <div className="flex justify-between items-center">
-                    <p className="text-[20px] text-color-secondary-light flex items-center gap-2">
+                    <p className="text-[20px] lrg:text-[16px] text-color-secondary-light flex items-center gap-2">
                       From
-                      <span className="text-color-btn-primary text-[40px]">
+                      <span className="text-color-btn-primary text-[40px] lrg:text-[32px]">
                         $250
                       </span>
                     </p>
-                    <button className="bg-color-btn-primary rounded-md px-[25px] py-[12.5px] text-color-primary self-end">
+                    <button className="bg-color-btn-primary rounded-md px-[25px] py-[12.5px] lrg:px-[20px] lrg:py-[10px] text-color-primary self-end">
                       Details
                     </button>
                   </div>
                 </div>
               </div>
-            </SwiperSlide>
+            </SwiperSlide>{" "}
             <SwiperSlide>
-              <div className="w-auto h-auto flex flex-col  bg-[#FFF8F1] rounded-[26px] ">
+              <div className="w-full lrg:w-[0%] h-[629px] flex flex-col  bg-[#FFF8F1] rounded-[26px] ">
                 {/* image part  */}
-                <div className="h-[286px] w-full rounded-tl-[26px] rounded-tr-[26px] overflow-hidden">
-                  <Image src={pimg1} alt="Pricing-1" width={497} height={286} />
+                <div className="h-[286px] rounded-tl-[26px] rounded-tr-[26px] overflow-hidden">
+                  <Image src={pimg1} alt="Pricing-1" />
                 </div>
 
                 {/* description part  */}
-                <div className="flex flex-col gap-3  px-[24px] py-[40px] ">
-                  <h3 className="text-color-secondary-light text-[28px]">
+                <div className="flex flex-col gap-3 px-[24px] py-[40px] h-[343px]  ">
+                  <h3 className="text-color-secondary-light text-[28px] lrg:text-[22px]">
                     Listbon, Portugal
                   </h3>
                   <div>rating</div>
-                  <article className="text-font-sm">
+                  <article className="text-font-sm lrg:text[14px]">
                     5 nights and 4 days in 5 star hotel, breakfast and lunch
                     included. Very popular during the renaissance. Passage and
                     going through the cites of the world in classical
@@ -177,13 +196,13 @@ const Pricing = () => {
                   </article>
 
                   <div className="flex justify-between items-center">
-                    <p className="text-[20px] text-color-secondary-light flex items-center gap-2">
+                    <p className="text-[20px] lrg:text-[16px] text-color-secondary-light flex items-center gap-2">
                       From
-                      <span className="text-color-btn-primary text-[40px]">
+                      <span className="text-color-btn-primary text-[40px] lrg:text-[32px]">
                         $250
                       </span>
                     </p>
-                    <button className="bg-color-btn-primary rounded-md px-[25px] py-[12.5px] text-color-primary self-end">
+                    <button className="bg-color-btn-primary rounded-md px-[25px] py-[12.5px] lrg:px-[20px] lrg:py-[10px] text-color-primary self-end">
                       Details
                     </button>
                   </div>

@@ -40,14 +40,13 @@ const customizations = {
         'bold': 700,
         'extrabold': 800,
       },
-      // padding: {
-      //   '10px': '10px',
-      //   '20px': '20px',
-      // },
-      // margin: {
-      //   '5px': '5px',
-      //   '10px': '10px',
-      // },
+      screens: {
+        'xsm': {'max': '320px'},  
+        'sml': {'max': '768px'},
+        'mid': {'max': '1152px'},
+        'lrg': {'max': '1440px'},
+        'xlg': {'max': '1920px'},
+      }
     },
   },
 };

@@ -11,7 +11,7 @@ import "swiper/css";
 
 const Explore = () => {
   return (
-    <div className=" h-screen w-screen mb-11 flex items-center justify-center overflow-hidden">
+    <div className=" h-auto w-screen mb-11 mt-11 flex items-center justify-center overflow-hidden">
       <div className="h-[90%] w-[82%] ">
         {/* Title Part  */}
         <div className="flex justify-between ">
@@ -31,7 +31,7 @@ const Explore = () => {
               to natural wonders.
             </p>
           </div>
-          <div className="text-color-primary flex gap-5 self-end">
+          <div className="text-color-primary flex gap-5 self-end sml:hidden ">
             <button className="custom-prev bg-color-secondary rounded-md px-4 py-2">
               Left
             </button>
@@ -49,12 +49,30 @@ const Explore = () => {
               nextEl: ".custom-next",
               prevEl: ".custom-prev",
             }}
-            spaceBetween={50}
-            slidesPerView={3}
+            breakpoints={{
+              320: {
+                slidesPerView: 1,
+              },
+              768: {
+                slidesPerView: 1,
+              },
+              1152: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+              1440: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+              1992: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+            }}
           >
             <SwiperSlide>
-              <div className="h-auto relative mt-10">
-                <div className="relative w-auto h-[661px] rounded-[26px] overflow-hidden">
+              <div className="h-auto w-[480px] relative mt-10">
+                <div className="relative w-[100%] h-[661px] rounded-[26px] overflow-hidden">
                   <Image
                     src={Explore1}
                     alt="explore"
@@ -71,10 +89,10 @@ const Explore = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="h-auto relative mt-10">
-                <div className="relative w-auto h-[661px] rounded-[26px] overflow-hidden">
+              <div className="h-auto w-[480px] relative mt-10">
+                <div className="relative w-[100%] h-[661px] rounded-[26px] overflow-hidden">
                   <Image
-                    src={Explore1}
+                    src={Explore2}
                     alt="explore"
                     layout="fill"
                     objectFit="cover"
@@ -89,10 +107,10 @@ const Explore = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="h-auto relative mt-10">
-                <div className="relative w-auto h-[661px] rounded-[26px] overflow-hidden">
+              <div className="h-auto w-[480px] relative mt-10">
+                <div className="relative w-[100%] h-[661px] rounded-[26px] overflow-hidden">
                   <Image
-                    src={Explore1}
+                    src={Explore3}
                     alt="explore"
                     layout="fill"
                     objectFit="cover"
@@ -107,10 +125,10 @@ const Explore = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="h-auto relative mt-10">
-                <div className="relative w-auto h-[661px] rounded-[26px] overflow-hidden">
+              <div className="h-auto w-[480px] relative mt-10">
+                <div className="relative w-[100%] h-[661px] rounded-[26px] overflow-hidden">
                   <Image
-                    src={Explore1}
+                    src={Explore4}
                     alt="explore"
                     layout="fill"
                     objectFit="cover"
@@ -125,6 +143,14 @@ const Explore = () => {
               </div>
             </SwiperSlide>
           </Swiper>
+        </div>
+        <div className="text-color-primary hidden gap-5 self-center sml:flex mt-10">
+          <button className="custom-prev bg-color-secondary rounded-md px-4 py-2">
+            Left
+          </button>
+          <button className="custom-next bg-color-btn-primary rounded-md px-4 py-2">
+            Right
+          </button>
         </div>
       </div>
     </div>

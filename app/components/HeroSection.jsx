@@ -5,8 +5,8 @@ const HeroSection = () => {
     <div className="absolute mt-44 w-[100%]  text-color-primary flex flex-col gap-28">
       {/* Title section  */}
       <div className="flex justify-center w-screen">
-        <div className="w-[82%] ">
-          <h3 className="text-font-xl leading-tight">
+        <div className="w-[82%] mid:w-[90%] ">
+          <h3 className="text-font-xl mid:text-font-lg leading-tight">
             Start your unforgettable <br /> journey with us
           </h3>
           <p className="text-font-md">
@@ -16,9 +16,9 @@ const HeroSection = () => {
       </div>
 
       {/* Booking section  */}
-      <div className="h-[150px] w-[78%] flex ">
+      <div className="h-[150px] w-[78%] flex mid:h-[200px] ">
         {/* left section  */}
-        <div className="bg-color-primary h-full w-[80%] grid grid-flow-col place-items-center pl-28 gap-0">
+        <div className=" bg-color-primary h-full w-[80%] grid grid-flow-col mid:grid-cols-2 mid:grid-flow-row place-items-center justify-items-start pl-28 lrg:pl-16 mid:pl-0 gap-20 lrg:gap-10 mid:gap-0 ">
           <div>
             <p className="text-color-secondary-light">DESTINATION</p>
             <input className="block appearance-none w-32 bg-transparent border-b border-gray-500  focus:outline-none  text-color-secondary m-0 p-0" />
@@ -58,7 +58,7 @@ const HeroSection = () => {
 
         {/* right section  */}
         <div className="bg-color-btn-primary h-full w-[20%] rounded-tr-md rounded-br-md flex items-center justify-center gap-5">
-          <div className="text-5xl">
+          <div className="text-5xl mid:text-4xl">
             Book <br /> Now
           </div>
           <div>right arrow</div>
