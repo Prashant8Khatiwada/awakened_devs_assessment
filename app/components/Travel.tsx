@@ -26,6 +26,7 @@ const Travel = () => {
               Our photo gallery on trip
             </p>
           </div>
+
           <div className="text-color-primary flex gap-5 self-end">
             <button className=" bg-color-secondary rounded-md px-4 py-2">
               Left
@@ -42,15 +43,12 @@ const Travel = () => {
             <Image src={gal1} alt="gal1" />
           </div>
           <div className="mb-6">
-            {" "}
             <Image src={gal2} alt="gal2" />
           </div>
           <div className="mt-6">
-            {" "}
             <Image src={gal3} alt="gal3" />
           </div>
           <div className="mb-6">
-            {" "}
             <Image src={gal4} alt="gal4" />
           </div>
         </div>

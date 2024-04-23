@@ -1,8 +1,13 @@
+import Image from "next/image";
 import React from "react";
+import Explore1 from "../../public/explore/explore-1.jpeg";
+import Explore2 from "../../public/explore/explore-2.jpeg";
+import Explore3 from "../../public/explore/explore-3.jpeg";
+import Explore4 from "../../public/explore/explore-4.jpeg";
 
 const Explore = () => {
   return (
-    <div className=" h-screen w-screen mb-11 flex items-center justify-center">
+    <div className=" h-screen w-screen mb-11 flex items-center justify-center overflow-hidden">
       <div className="h-[90%] w-[82%] ">
         {/* Title Part  */}
         <div className="flex justify-between ">
@@ -32,8 +37,80 @@ const Explore = () => {
           </div>
         </div>
 
-        {/* Images Part  */}
-        <div></div>
+        {/* Description Part */}
+        <div className="flex gap-8">
+          {/* one card */}
+          <div className="h-auto relative mt-10">
+            <div className="relative w-[497px] h-[661px] rounded-[26px] overflow-hidden">
+              <Image
+                src={Explore1}
+                alt="explore"
+                layout="fill"
+                objectFit="cover"
+                objectPosition="center"
+                className="absolute"
+              />
+            </div>
+            <div className="absolute z-10 bottom-7 left-5 text-color-primary">
+              <h3 className="text-[28px]">Monument of Berlin</h3>
+              <p className="text-font-md">Berlin, Germany</p>
+            </div>
+          </div>
+
+          {/* two card */}
+          <div className="h-auto relative mt-10">
+            <div className="relative w-[497px] h-[661px] rounded-[26px] overflow-hidden">
+              <Image
+                src={Explore1}
+                alt="explore"
+                layout="fill"
+                objectFit="cover"
+                objectPosition="center"
+                className="absolute"
+              />
+            </div>
+            <div className="absolute z-10 bottom-7 left-5 text-color-primary">
+              <h3 className="text-[28px]">Monument of Berlin</h3>
+              <p className="text-font-md">Berlin, Germany</p>
+            </div>
+          </div>
+
+          {/* three card */}
+          <div className="h-auto relative mt-10">
+            <div className="relative w-[497px] h-[661px] rounded-[26px] overflow-hidden">
+              <Image
+                src={Explore1}
+                alt="explore"
+                layout="fill"
+                objectFit="cover"
+                objectPosition="center"
+                className="absolute"
+              />
+            </div>
+
+            {/* Four card */}
+            <div className="absolute z-10 bottom-7 left-5 text-color-primary">
+              <h3 className="text-[28px]">Monument of Berlin</h3>
+              <p className="text-font-md">Berlin, Germany</p>
+            </div>
+          </div>
+          <div className="h-auto relative mt-10">
+            <div className="relative w-[497px] h-[661px] rounded-[26px] overflow-hidden">
+              <Image
+                src={Explore1}
+                alt="explore"
+                layout="fill"
+                objectFit="cover"
+                objectPosition="center"
+                className="absolute"
+              />
+            </div>
+            <div className="absolute z-10 bottom-7 left-5 text-color-primary">
+              <h3 className="text-[28px]">Monument of Berlin</h3>
+              <p className="text-font-md">Berlin, Germany</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
