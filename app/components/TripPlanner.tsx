@@ -4,6 +4,7 @@ import travel2 from "../../public/travel/travel2.png";
 import travel3 from "../../public/travel/travel3.png";
 import travel4 from "../../public/travel/travel4.png";
 import Image from "next/image";
+import SlidingTrip from "./slider/SlidingTrip";
 const TripPlanner = () => {
   return (
     <div className=" h-auto w-screen mb-32 flex items-center justify-center overflow-hidden">
@@ -38,24 +39,8 @@ const TripPlanner = () => {
         </div>
 
         {/* Image part  */}
-        <div className="w-auto h-[545px] flex items-center ">
-          <div className="group w-auto transition-opacity duration-[5000ms] ">
-            {/* actual image  */}
-            <div className="cursor-pointer">
-              <Image src={travel1} alt="travel1" />
-            </div>
-            <div className="w-[300px] mt-4 hidden group-hover:block self-center">
-              <p className="flex justify-between items-center text-font-sm">
-                GUIDED TOUR<span> $99/Day</span>
-              </p>
-              <h2 className="text-[28px]">Paris City Tour</h2>
-              <div className="text-font-sm flex justify-between">
-                <div>Rating</div>
-                <span> 7 Days Tour</span>
-              </div>
-            </div>
-          </div>
-        </div>
+
+        <SlidingTrip />
       </div>
     </div>
   );
