@@ -9,6 +9,7 @@ import Blogs from "./Blogs";
 import Travel from "./Travel";
 import Testimonials from "./Testimonials";
 import Footer from "./footer/Footer";
+import TripPlanner from "./TripPlanner";
 const Home = () => {
   return (
     <>
@@ -27,7 +28,7 @@ const Home = () => {
       <Explore />
       <Pricing />
       <Blogs />
-      {/* trip  */}
+      <TripPlanner />
       <Travel />
       <Testimonials />
       <Footer />

@@ -37,8 +37,8 @@ const Explore = () => {
           </div>
         </div>
 
-        {/* Description Part */}
-        <div className="flex gap-8">
+        {/* Image Part */}
+        <div className="flex gap-8 mt-14">
           {/* one card */}
           <div className="h-auto relative mt-10">
             <div className="relative w-[497px] h-[661px] rounded-[26px] overflow-hidden">
