@@ -58,8 +58,6 @@ If you'd like to contribute to the project, follow these steps:
    git commit -am "Add my feature"
    ```
 
-````
-
 6. **Push your changes**:
 
    ```bash
@@ -69,4 +67,3 @@ If you'd like to contribute to the project, follow these steps:
 7. **Create a Pull Request:**:
 
    Go to the original repository and create a pull request for your changes.
-````
