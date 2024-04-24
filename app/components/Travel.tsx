@@ -22,7 +22,7 @@ const Travel = () => {
         {/* Title Part  */}
         <div className="flex justify-between items-center ">
           <div className="flex flex-col gap-3">
-            <h3 className="text-font-lg leading-tight lrg:text-[44px]">
+            <h3 className="text-font-lg leading-tight lrg:text-[50px]">
               Destination Gallery
             </h3>
             <hr

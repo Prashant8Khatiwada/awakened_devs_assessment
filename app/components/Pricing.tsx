@@ -9,14 +9,16 @@ import rightArrow from "../../public/svg/right.png";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const Pricing = () => {
   return (
-    <div className=" h-auto w-screen mb-32 flex flex-row-reverse items-center justify-center">
-      <div className="h-[90%] w-[82%] ">
+    <div className=" h-auto w-screen mb-20 mt-20 flex flex-row-reverse items-center justify-center">
+      <div className="h-[90%] w-[82%] lrg:w-[90%] ">
         {/* Title Part  */}
         <div className="flex justify-between ">
-          <div className=" text-color-primary flex gap-5 self-end">
+          <div className=" text-color-primary flex sml:hidden gap-5 self-end">
             <button className="custom-prev bg-color-secondary rounded-md px-5 py-3">
               <Image src={leftArrow} alt="Left Arrow" />
             </button>
@@ -26,7 +28,7 @@ const Pricing = () => {
           </div>
 
           <div className="flex flex-col gap-3  ">
-            <h3 className="text-font-lg leading-tight text-right">
+            <h3 className="text-font-lg leading-tight text-right lrg:text-[50px]">
               Special Offers
             </h3>
             <hr
@@ -39,31 +41,28 @@ const Pricing = () => {
               }}
             />
 
-            <p className="text-font-md text-color-secondary-light">
+            <p className="text-font-md text-color-secondary-light lrg:text-font-sm">
               Check out our special offer and discounts
             </p>
           </div>
         </div>
 
         {/* Images Part  */}
-        <div className="mt-20 flex gap-5  ">
+        <div className="mt-20 flex gap-5   ">
           <Swiper
             modules={[Navigation]}
             navigation={{
               nextEl: ".custom-next",
               prevEl: ".custom-prev",
             }}
-            // spaceBetween={50}
             breakpoints={{
-              320: {
-                slidesPerView: 1,
-              },
               768: {
-                slidesPerView: 1,
+                slidesPerView: 2,
+                spaceBetween: 30,
               },
               1152: {
                 slidesPerView: 3,
-                spaceBetween: 50,
+                spaceBetween: 30,
               },
               1440: {
                 slidesPerView: 3,
@@ -76,10 +75,10 @@ const Pricing = () => {
             }}
           >
             <SwiperSlide>
-              <div className="w-full  lrg:w-[0%] h-[629px] flex flex-col  bg-[#FFF8F1] rounded-[26px] ">
+              <div className="w-full h-[629px] flex flex-col  bg-[#FFF8F1] rounded-[26px] ">
                 {/* image part  */}
-                <div className="h-[286px] rounded-tl-[26px] rounded-tr-[26px] overflow-hidden">
-                  <Image src={pimg1} alt="Pricing-1" />
+                <div className="h-[286px] relative rounded-tl-[26px] rounded-tr-[26px] overflow-hidden">
+                  <Image src={pimg1} alt="Pricing-1" layout="fill" />
                 </div>
 
                 {/* description part  */}
@@ -110,10 +109,10 @@ const Pricing = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="w-full lrg:w-[0%] h-[629px] flex flex-col  bg-[#FFF8F1] rounded-[26px] ">
+              <div className="w-full h-[629px] flex flex-col  bg-[#FFF8F1] rounded-[26px] ">
                 {/* image part  */}
-                <div className="h-[286px] rounded-tl-[26px] rounded-tr-[26px] overflow-hidden">
-                  <Image src={pimg1} alt="Pricing-1" />
+                <div className="h-[286px] relative rounded-tl-[26px] rounded-tr-[26px] overflow-hidden">
+                  <Image src={pimg1} alt="Pricing-1" layout="fill" />
                 </div>
 
                 {/* description part  */}
@@ -142,12 +141,12 @@ const Pricing = () => {
                   </div>
                 </div>
               </div>
-            </SwiperSlide>{" "}
+            </SwiperSlide>
             <SwiperSlide>
-              <div className="w-full lrg:w-[0%] h-[629px] flex flex-col  bg-[#FFF8F1] rounded-[26px] ">
+              <div className="w-full h-[629px] flex flex-col  bg-[#FFF8F1] rounded-[26px] ">
                 {/* image part  */}
-                <div className="h-[286px] rounded-tl-[26px] rounded-tr-[26px] overflow-hidden">
-                  <Image src={pimg1} alt="Pricing-1" />
+                <div className="h-[286px] relative rounded-tl-[26px] rounded-tr-[26px] overflow-hidden">
+                  <Image src={pimg1} alt="Pricing-1" layout="fill" />
                 </div>
 
                 {/* description part  */}
@@ -176,12 +175,12 @@ const Pricing = () => {
                   </div>
                 </div>
               </div>
-            </SwiperSlide>{" "}
+            </SwiperSlide>
             <SwiperSlide>
-              <div className="w-full lrg:w-[0%] h-[629px] flex flex-col  bg-[#FFF8F1] rounded-[26px] ">
+              <div className="w-full h-[629px] flex flex-col  bg-[#FFF8F1] rounded-[26px] ">
                 {/* image part  */}
-                <div className="h-[286px] rounded-tl-[26px] rounded-tr-[26px] overflow-hidden">
-                  <Image src={pimg1} alt="Pricing-1" />
+                <div className="h-[286px] relative rounded-tl-[26px] rounded-tr-[26px] overflow-hidden">
+                  <Image src={pimg1} alt="Pricing-1" layout="fill" />
                 </div>
 
                 {/* description part  */}
@@ -212,6 +211,14 @@ const Pricing = () => {
               </div>
             </SwiperSlide>
           </Swiper>
+        </div>
+        <div className=" text-color-primary hidden sml:flex gap-5 mt-10 self-end">
+          <button className="custom-prev bg-color-secondary rounded-md px-5 py-3">
+            <Image src={leftArrow} alt="Left Arrow" />
+          </button>
+          <button className="custom-next bg-color-btn-primary rounded-md px-5 py-3">
+            <Image src={rightArrow} alt="Right Arrow" />
+          </button>
         </div>
       </div>
     </div>
