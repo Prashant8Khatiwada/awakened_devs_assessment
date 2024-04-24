@@ -11,9 +11,24 @@ import "swiper/css";
 
 const SlidingTrip = () => {
   return (
-    <Swiper spaceBetween={10} slidesPerView={3}>
+    <Swiper
+      breakpoints={{
+        1152: {
+          slidesPerView: 2,
+          spaceBetween: 50,
+        },
+        1440: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
+        1992: {
+          slidesPerView: 2,
+          spaceBetween: 50,
+        },
+      }}
+    >
       <SwiperSlide>
-        <div className="w-full">
+        <div className="w-[100%]">
           {/* actual image  */}
           <div className="cursor-pointer">
             <Image src={travel1} alt="travel1" />
@@ -37,7 +52,6 @@ const SlidingTrip = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        {" "}
         <div className="w-full">
           {/* actual image  */}
           <div className="cursor-pointer">
