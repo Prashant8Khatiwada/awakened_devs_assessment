@@ -48,9 +48,7 @@ If you'd like to contribute to the project, follow these steps:
    git checkout -b my-feature
    ```
 
-````
-
-4. **Make your changes:**:
+4. **Make your changes**:
 
    Make any necessary changes to the codebase.
 
@@ -58,6 +56,8 @@ If you'd like to contribute to the project, follow these steps:
 
    ```bash
    git commit -am "Add my feature"
+   ```
+
 ````
 
 6. **Push your changes**:
@@ -69,3 +69,4 @@ If you'd like to contribute to the project, follow these steps:
 7. **Create a Pull Request:**:
 
    Go to the original repository and create a pull request for your changes.
+````
