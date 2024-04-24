@@ -15,53 +15,35 @@ const SlidingTrip = () => {
       breakpoints={{
         1152: {
           slidesPerView: 2,
-          spaceBetween: 50,
+          spaceBetween: 30,
         },
         1440: {
           slidesPerView: 3,
-          spaceBetween: 50,
+          spaceBetween: 30,
         },
         1992: {
           slidesPerView: 2,
-          spaceBetween: 50,
+          spaceBetween: 30,
         },
       }}
     >
       <SwiperSlide>
-        <div className="w-[100%]">
+        <div className=" flex flex-col py-3 ">
           {/* actual image  */}
-          <div className="cursor-pointer">
-            <Image src={travel1} alt="travel1" />
+          <div className="cursor-pointer h-[399px] sml:h-[350px] relative rounded-[26px] overflow-hidden">
+            <Image
+              src={travel1}
+              alt="travel1"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center"
+            />
           </div>
-          <div className="w-[300px] mt-4  self-center">
-            <p className="flex justify-between items-center text-font-sm">
+          <div className="w-[90%] mt-4  self-center">
+            <p className="flex justify-between items-center text-font-sm mid:text-[16px]">
               GUIDED TOUR<span> $99/Day</span>
             </p>
-            <h2 className="text-[28px]">Paris City Tour</h2>
-            <div className="text-font-sm flex justify-between">
-              <div className="flex gap-2">
-                <Image src={Star} alt="star" />
-                <Image src={Star} alt="star" />
-                <Image src={Star} alt="star" />
-                <Image src={Star} alt="star" />
-                <Image src={Star} alt="star" />
-              </div>
-              <span> 7 Days Tour</span>
-            </div>
-          </div>
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="w-full">
-          {/* actual image  */}
-          <div className="cursor-pointer">
-            <Image src={travel2} alt="travel2" />
-          </div>
-          <div className="w-[300px] mt-4  self-center">
-            <p className="flex justify-between items-center text-font-sm">
-              GUIDED TOUR<span> $99/Day</span>
-            </p>
-            <h2 className="text-[28px]">Paris City Tour</h2>
+            <h2 className="text-[28px] lrg:text-font-sm">Paris City Tour</h2>
             <div className="text-font-sm flex justify-between">
               <div>Rating</div>
               <span> 7 Days Tour</span>
@@ -70,17 +52,22 @@ const SlidingTrip = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        {" "}
-        <div className="w-full">
+        <div className=" flex flex-col py-3 ">
           {/* actual image  */}
-          <div className="cursor-pointer ">
-            <Image src={travel3} alt="travel3" />
+          <div className="cursor-pointer h-[399px] sml:h-[350px] relative rounded-[26px] overflow-hidden">
+            <Image
+              src={travel1}
+              alt="travel1"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center"
+            />
           </div>
-          <div className="w-[300px] mt-4  self-center">
-            <p className="flex justify-between items-center text-font-sm">
+          <div className="w-[90%] mt-4  self-center">
+            <p className="flex justify-between items-center text-font-sm mid:text-[16px]">
               GUIDED TOUR<span> $99/Day</span>
             </p>
-            <h2 className="text-[28px]">Paris City Tour</h2>
+            <h2 className="text-[28px] lrg:text-font-sm">Paris City Tour</h2>
             <div className="text-font-sm flex justify-between">
               <div>Rating</div>
               <span> 7 Days Tour</span>
@@ -89,17 +76,46 @@ const SlidingTrip = () => {
         </div>
       </SwiperSlide>
       <SwiperSlide>
-        {" "}
-        <div className="w-full">
+        <div className=" flex flex-col py-3 ">
           {/* actual image  */}
-          <div className="cursor-pointer">
-            <Image src={travel4} alt="travel4" />
+          <div className="cursor-pointer h-[399px] sml:h-[350px] relative rounded-[26px] overflow-hidden">
+            <Image
+              src={travel1}
+              alt="travel1"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center"
+            />
           </div>
-          <div className="w-[300px] mt-4  self-center">
-            <p className="flex justify-between items-center text-font-sm">
+          <div className="w-[90%] mt-4  self-center">
+            <p className="flex justify-between items-center text-font-sm mid:text-[16px]">
               GUIDED TOUR<span> $99/Day</span>
             </p>
-            <h2 className="text-[28px]">Paris City Tour</h2>
+            <h2 className="text-[28px] lrg:text-font-sm">Paris City Tour</h2>
+            <div className="text-font-sm flex justify-between">
+              <div>Rating</div>
+              <span> 7 Days Tour</span>
+            </div>
+          </div>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className=" flex flex-col py-3 ">
+          {/* actual image  */}
+          <div className="cursor-pointer h-[399px] sml:h-[350px] relative rounded-[26px] overflow-hidden">
+            <Image
+              src={travel1}
+              alt="travel1"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center"
+            />
+          </div>
+          <div className="w-[90%] mt-4  self-center">
+            <p className="flex justify-between items-center text-font-sm mid:text-[16px]">
+              GUIDED TOUR<span> $99/Day</span>
+            </p>
+            <h2 className="text-[28px] lrg:text-font-sm">Paris City Tour</h2>
             <div className="text-font-sm flex justify-between">
               <div>Rating</div>
               <span> 7 Days Tour</span>

@@ -65,8 +65,8 @@ const Testimonials = () => {
               <div className="w-[100px] h-[100px] rounded-[50%] bg-white overflow-hidden ml-7">
                 <Image src={person1} alt="Person1" />
               </div>
-              <div className="p-[40px] bg-[#F5F6F7] w-[100%] mt-[-50px] flex flex-col gap-4 rounded-[12px]">
-                <article className="mt-[30px] text-font-sm">
+              <div className="p-[40px] mid:p-[20px] bg-[#F5F6F7] w-[100%] mt-[-50px] flex flex-col gap-4 rounded-[12px]">
+                <article className="mt-[30px] mid:mt-[50px] text-font-sm">
                   But I must explain to you how all this mistaken idea of
                   denouncing pleasure and praising pain was born and I will give
                   you a complete account of the system and expound the actual
@@ -92,8 +92,8 @@ const Testimonials = () => {
               <div className="w-[100px] h-[100px] rounded-[50%] bg-white overflow-hidden ml-7">
                 <Image src={person1} alt="Person1" />
               </div>
-              <div className="p-[40px] bg-[#F5F6F7] w-[100%] mt-[-50px] flex flex-col gap-4 rounded-[12px]">
-                <article className="mt-[30px] text-font-sm">
+              <div className="p-[40px] mid:p-[20px] bg-[#F5F6F7] w-[100%] mt-[-50px] flex flex-col gap-4 rounded-[12px]">
+                <article className="mt-[30px] mid:mt-[50px] text-font-sm">
                   But I must explain to you how all this mistaken idea of
                   denouncing pleasure and praising pain was born and I will give
                   you a complete account of the system and expound the actual
@@ -119,8 +119,8 @@ const Testimonials = () => {
               <div className="w-[100px] h-[100px] rounded-[50%] bg-white overflow-hidden ml-7">
                 <Image src={person1} alt="Person1" />
               </div>
-              <div className="p-[40px] bg-[#F5F6F7] w-[100%] mt-[-50px] flex flex-col gap-4 rounded-[12px]">
-                <article className="mt-[30px] text-font-sm">
+              <div className="p-[40px] mid:p-[20px] bg-[#F5F6F7] w-[100%] mt-[-50px] flex flex-col gap-4 rounded-[12px]">
+                <article className="mt-[30px] mid:mt-[50px] text-font-sm">
                   But I must explain to you how all this mistaken idea of
                   denouncing pleasure and praising pain was born and I will give
                   you a complete account of the system and expound the actual
@@ -146,8 +146,8 @@ const Testimonials = () => {
               <div className="w-[100px] h-[100px] rounded-[50%] bg-white overflow-hidden ml-7">
                 <Image src={person1} alt="Person1" />
               </div>
-              <div className="p-[40px] bg-[#F5F6F7] w-[100%] mt-[-50px] flex flex-col gap-4 rounded-[12px]">
-                <article className="mt-[30px] text-font-sm">
+              <div className="p-[40px] mid:p-[20px] bg-[#F5F6F7] w-[100%] mt-[-50px] flex flex-col gap-4 rounded-[12px]">
+                <article className="mt-[30px] mid:mt-[50px] text-font-sm">
                   But I must explain to you how all this mistaken idea of
                   denouncing pleasure and praising pain was born and I will give
                   you a complete account of the system and expound the actual

@@ -50,7 +50,7 @@ const Travel = () => {
         </div>
 
         {/* Images Part  */}
-        <div className="w-full mt-20 h-auto flex sml:flex-col p-9 gap-8 sml:hidden">
+        <div className="w-full mt-20 p-9 sml:hidden">
           <Swiper
             modules={[Navigation]}
             navigation={{
@@ -58,9 +58,13 @@ const Travel = () => {
               prevEl: ".custom-prev",
             }}
             breakpoints={{
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
               1152: {
                 slidesPerView: 3,
-                spaceBetween: 50,
+                spaceBetween: 30,
               },
               1440: {
                 slidesPerView: 3,
