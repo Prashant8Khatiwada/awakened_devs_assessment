@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div>
       <NewsLetter />
-      <div className="mt-[-90px] w-screen h-[570px] sml:h-[1052px]  bg-color-secondary text-color-primary absolute flex items-center justify-center sml:justify-start">
+      <div className="mt-[-90px] sml:mt-0 w-screen h-[570px] sml:h-[1052px]  bg-color-secondary text-color-primary absolute flex items-center justify-center sml:justify-start">
         <div className="grid grid-flow-col gap-36 lrg:gap-10 mt-10 sml:mt-20 px-8 sml:grid-flow-row">
           <div>
             <Image

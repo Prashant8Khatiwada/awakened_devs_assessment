@@ -8,7 +8,7 @@ const HeroSection = () => {
       {/* Title section  */}
       <div className="flex justify-center w-screen">
         <div className="w-[82%] mid:w-[90%] ">
-          <h3 className="text-font-xl mid:text-font-lg leading-tight">
+          <h3 className="text-font-xl mid:text-[40px]">
             Start your unforgettable <br /> journey with us
           </h3>
           <p className="text-font-md">
