@@ -52,6 +52,7 @@ const SlidingTrip = () => {
                 <Image src={Star} alt="star" />
                 <Image src={Star} alt="star" />
                 <Image src={Star} alt="star" />
+                <Image src={Star} alt="star" />
               </div>
               <span> 7 Days Tour</span>
             </div>
