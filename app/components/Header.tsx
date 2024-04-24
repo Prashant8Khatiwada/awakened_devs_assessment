@@ -4,17 +4,26 @@ import Image from "next/image";
 import Link from "next/link";
 import HamBurger from "../../public/hamburger 1.png";
 
-const Header = () => {
+interface HeaderProps {
+  opaque?: boolean;
+}
+const Header: React.FC<HeaderProps> = ({ opaque }) => {
   return (
-    <div className="text-color-primary w-full h-20 relative flex sml:px-4  justify-between px-12  items-center bg-black bg-opacity-0 ">
+    <div
+      className={`text-color-primary w-full h-20 relative flex sml:px-4  justify-between px-12  items-center bg-color-secondary ${
+        opaque ? "bg-opacity-1" : "bg-opacity-0"
+      }`}
+    >
       {/* For Logo  */}
-      <div className="cursor-pointer">
-        <Image
-          className="w-[243px] h-[45.61px] mid:w-[180px] mid:h-[36px] "
-          src={Logo}
-          alt="logo"
-        />
-      </div>
+      <Link href="/">
+        <div className="cursor-pointer">
+          <Image
+            className="w-[243px] h-[45.61px] mid:w-[180px] mid:h-[36px] "
+            src={Logo}
+            alt="logo"
+          />
+        </div>
+      </Link>
 
       {/* For Menu  */}
       <div className="flex gap-8 mid:gap-4 text-font-md mid:text-font-sm sml:hidden">

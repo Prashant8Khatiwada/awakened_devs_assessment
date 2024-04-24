@@ -1,11 +1,15 @@
 import React from "react";
 import Travel from "../components/Travel";
+import Header from "../components/Header";
+import Footer from "../components/footer/Footer";
 
 const page = () => {
   return (
-    <div>
+    <>
+      <Header opaque={true} />
       <Travel />
-    </div>
+      <Footer />
+    </>
   );
 };
 
