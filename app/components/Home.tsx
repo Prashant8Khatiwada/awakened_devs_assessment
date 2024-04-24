@@ -13,7 +13,7 @@ import TripPlanner from "./TripPlanner";
 const Home = () => {
   return (
     <>
-      <div className="h-screen w-screen relative mb-11">
+      <div className="h-screen sml:h-[1200px] w-screen relative mb-11">
         <Image
           src={background_image}
           alt="Your Image"

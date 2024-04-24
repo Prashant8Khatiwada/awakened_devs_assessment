@@ -2,17 +2,22 @@ import React from "react";
 import Logo from "../../public/Logo.png";
 import Image from "next/image";
 import Link from "next/link";
+import HamBurger from "../../public/hamburger 1.png";
 
 const Header = () => {
   return (
-    <div className="text-color-primary w-full h-20 relative flex justify-around items-center bg-black bg-opacity-0 font-sound ">
+    <div className="text-color-primary w-full h-20 relative flex justify-between  px-16 mid:px-8 items-center bg-black bg-opacity-0 ">
       {/* For Logo  */}
       <div className="cursor-pointer">
-        <Image src={Logo} alt="logo" width={234} height={45.61} />
+        <Image
+          className="w-[243px] h-[45.61px] mid:w-[180px] mid:h-[36px]"
+          src={Logo}
+          alt="logo"
+        />
       </div>
 
       {/* For Menu  */}
-      <div className="flex gap-8 text-font-sm">
+      <div className="flex gap-8 mid:gap-4 text-font-md mid:text-font-sm sml:hidden">
         <Link href="/">
           <div className="cursor-pointer">Home</div>
         </Link>
@@ -31,12 +36,21 @@ const Header = () => {
       </div>
 
       {/* For Login Button  */}
-      <div className="flex gap-8 text-font-sm">
-        <button className="rounded-12 px-4 py-2">Log In</button>
-        <button className="bg-color-btn-primary rounded-md px-4 py-2">
+      <div className="flex gap-8 mid:gap-4 text-font-md mid:text-font-sm sml:hidden">
+        <button className="rounded-12 px-4 py-2 mid:px-3 mid:py-1">
+          Log In
+        </button>
+        <button className="bg-color-btn-primary rounded-md px-4 py-2 mid:px-3 mid:py-1">
           Sign Up
         </button>
       </div>
+
+      {/* ========== FOR SMALL SCREEN =========  */}
+      <Image
+        src={HamBurger}
+        alt="Hamburger"
+        className="sml:block hidden cursor-pointer"
+      />
     </div>
   );
 };
