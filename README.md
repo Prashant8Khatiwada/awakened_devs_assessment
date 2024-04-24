@@ -15,14 +15,16 @@ To set up the project locally, follow these steps:
 
 2. **Install dependencies**:
 
-   bash
+   ```bash
    cd travel-website
    npm install
+   ```
 
 3. **Run the development server**:
 
-   bash
+   ```bash
    npm run dev
+   ```
 
 The website should now be running at http://localhost:3000.
 
@@ -36,13 +38,17 @@ If you'd like to contribute to the project, follow these steps:
 
 2. **Clone your fork**:
 
-   bash
+   ```bash
    git clone https://github.com/your-username/travel-website.git
+   ```
 
 3. **Create a new branch**:
 
-   bash
+   ```bash
    git checkout -b my-feature
+   ```
+
+````
 
 4. **Make your changes:**:
 
@@ -50,13 +56,15 @@ If you'd like to contribute to the project, follow these steps:
 
 5. **Commit your changes:**:
 
-   bash
+   ```bash
    git commit -am "Add my feature"
+````
 
 6. **Push your changes**:
 
-   bash
+   ```bash
    git push origin my-feature
+   ```
 
 7. **Create a Pull Request:**:
 
