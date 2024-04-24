@@ -4,6 +4,10 @@ import gal1 from "../../public/gallery/gal-1.png";
 import gal2 from "../../public/gallery/gal-2.png";
 import gal3 from "../../public/gallery/gal-3.png";
 import gal4 from "../../public/gallery/gal-4.png";
+import smgal1 from "../../public/gallery/smgal1.png";
+import smgal2 from "../../public/gallery/smgal2.png";
+import smgal3 from "../../public/gallery/smgal3.png";
+import smgal4 from "../../public/gallery/smgal4.png";
 import leftArrow from "../../public/svg/left.png";
 import rightArrow from "../../public/svg/right.png";
 import Image from "next/image";
@@ -13,12 +17,14 @@ import "swiper/css";
 
 const Travel = () => {
   return (
-    <div className=" h-screen w-screen mt-11 mb-11 flex items-center justify-center">
+    <div className=" h-auto w-screen mt-11 mb-11 flex items-center justify-center">
       <div className="h-[90%] w-[82%] ">
         {/* Title Part  */}
-        <div className="flex justify-between ">
+        <div className="flex justify-between items-center ">
           <div className="flex flex-col gap-3">
-            <h3 className="text-font-lg leading-tight">Destination Gallery</h3>
+            <h3 className="text-font-lg leading-tight lrg:text-[44px]">
+              Destination Gallery
+            </h3>
             <hr
               style={{
                 width: "30%",
@@ -33,7 +39,7 @@ const Travel = () => {
             </p>
           </div>
 
-          <div className="text-color-primary flex gap-5 self-end">
+          <div className="text-color-primary flex gap-5 sml:hidden self-end">
             <button className="custom-prev bg-color-secondary rounded-md px-5 py-3">
               <Image src={leftArrow} alt="Left Arrow" />
             </button>
@@ -44,15 +50,27 @@ const Travel = () => {
         </div>
 
         {/* Images Part  */}
-        <div className="w-full mt-20 h-auto flex p-9 gap-8">
+        <div className="w-full mt-20 h-auto flex sml:flex-col p-9 gap-8 sml:hidden">
           <Swiper
             modules={[Navigation]}
             navigation={{
               nextEl: ".custom-next",
               prevEl: ".custom-prev",
             }}
-            spaceBetween={50}
-            slidesPerView={4}
+            breakpoints={{
+              1152: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+              1440: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+              1992: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+            }}
           >
             <SwiperSlide>
               <div className="mt-6">
@@ -80,6 +98,35 @@ const Travel = () => {
               </div>
             </SwiperSlide>
           </Swiper>
+        </div>
+
+        {/* ========== FOR SMALL SCREEN ========== */}
+
+        <div className="w-full mt-10 h-auto hidden sml:flex-col  gap-3 sml:flex">
+          <div className="mt-6">
+            <Image src={smgal1} alt="gal1" />
+          </div>
+          <div className="mt-6">
+            <Image src={smgal2} alt="gal2" />
+          </div>
+          <div className="mt-6">
+            <Image src={smgal3} alt="gal3" />
+          </div>
+          <div className="mt-6">
+            <Image src={smgal4} alt="gal4" />
+          </div>
+          <div className="mt-6">
+            <Image src={smgal1} alt="gal3" />
+          </div>
+        </div>
+
+        <div className="text-color-primary hidden gap-5 sml:flex  mt-10">
+          <button className="custom-prev bg-color-secondary rounded-md px-5 py-3">
+            <Image src={leftArrow} alt="Left Arrow" />
+          </button>
+          <button className="custom-next bg-color-btn-primary rounded-md px-5 py-3">
+            <Image src={rightArrow} alt="Right Arrow" />
+          </button>
         </div>
       </div>
     </div>
