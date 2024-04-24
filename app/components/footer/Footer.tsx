@@ -23,7 +23,7 @@ const Footer = () => {
               />
             </Link>
             <p className="text-font-sm mid:text-[16px]">
-              copyright © travellian 2022 All rights reserved
+              copyright © prashantkhatiwada 2022 All rights reserved
             </p>
           </div>
           <div>

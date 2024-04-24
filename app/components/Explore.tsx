@@ -146,7 +146,7 @@ const Explore = () => {
           </SwiperSlide>
         </Swiper>
 
-        <div className="text-color-primary hidden gap-5 self-center sml:flex mt-10">
+        <div className="text-color-primary hidden gap-5 self-center sml:flex mt-10 w-full justify-end">
           <button className="custom-prev bg-color-secondary rounded-md px-4 py-2">
             <Image src={leftArrow} alt="Left Arrow" />
           </button>

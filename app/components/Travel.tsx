@@ -124,7 +124,7 @@ const Travel = () => {
           </div>
         </div>
 
-        <div className="text-color-primary hidden gap-5 sml:flex  mt-10">
+        <div className="text-color-primary hidden gap-5 sml:flex w-full justify-end  mt-10">
           <button className="custom-prev bg-color-secondary rounded-md px-5 sml:px-4 py-3 sml:py-2">
             <Image
               className="xsm:w-[8px] xsm:h-[16px]"
