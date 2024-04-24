@@ -8,7 +8,7 @@ const HeroSection = () => {
       {/* Title section  */}
       <div className="flex justify-center w-screen">
         <div className="w-[82%] mid:w-[90%] ">
-          <h3 className="text-font-xl mid:text-[40px]">
+          <h3 className="text-font-xl mid:text-[45px]">
             Start your unforgettable <br /> journey with us
           </h3>
           <p className="text-font-md">
@@ -21,7 +21,7 @@ const HeroSection = () => {
       <div className="h-[150px] w-[78%] flex mid:h-[200px] sml:flex-col sml:w-[90%] sml:self-center ">
         {/* left section  */}
         <div className=" bg-color-primary h-full w-[80%] sml:w-[100%] flex items-center justify-center px-10 pl-36 mid:pl-10 sml:px-5 sml:py-4 sml:rounded-t-[20px]">
-          <div className="grid grid-flow-col mid:grid-cols-2 sml:grid-cols-1 mid:grid-flow-row items-center justify-items-center gap-12 justify-between">
+          <div className="grid grid-flow-col mid:grid-cols-2 xsm:grid-cols-1 mid:grid-flow-row items-center justify-items-center gap-12 justify-between">
             <div className="w-full">
               <p className="text-color-secondary-light">DESTINATION</p>
               <input className="block appearance-none w-32 bg-transparent border-b border-gray-500  focus:outline-none  text-color-secondary m-0 p-0" />

@@ -11,7 +11,7 @@ import "swiper/css";
 
 const Testimonials = () => {
   return (
-    <div className=" h-auto w-screen mb-24 mt-11 flex items-center justify-center">
+    <div className=" h-auto w-screen mb-32 mt-20 flex items-center justify-center">
       <div className="h-[90%] w-[82%] sml:w-[90%] ">
         {/* Title Part  */}
         <div className="flex flex-col gap-3">

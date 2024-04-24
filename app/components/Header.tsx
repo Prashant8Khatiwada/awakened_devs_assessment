@@ -6,11 +6,11 @@ import HamBurger from "../../public/hamburger 1.png";
 
 const Header = () => {
   return (
-    <div className="text-color-primary w-full h-20 relative flex justify-between  px-16 mid:px-8 items-center bg-black bg-opacity-0 ">
+    <div className="text-color-primary w-full h-20 relative flex sml:px-4  justify-between px-12  items-center bg-black bg-opacity-0 ">
       {/* For Logo  */}
       <div className="cursor-pointer">
         <Image
-          className="w-[243px] h-[45.61px] mid:w-[180px] mid:h-[36px]"
+          className="w-[243px] h-[45.61px] mid:w-[180px] mid:h-[36px] "
           src={Logo}
           alt="logo"
         />

@@ -17,7 +17,7 @@ import "swiper/css";
 
 const Travel = () => {
   return (
-    <div className=" h-auto w-screen mt-11 mb-11 flex items-center justify-center">
+    <div className=" h-auto w-screen mt-20 mb-20 flex items-center justify-center">
       <div className="h-[90%] w-[82%] ">
         {/* Title Part  */}
         <div className="flex justify-between items-center ">

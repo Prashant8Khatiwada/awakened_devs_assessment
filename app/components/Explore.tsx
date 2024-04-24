@@ -13,7 +13,7 @@ import "swiper/css";
 
 const Explore = () => {
   return (
-    <div className=" h-auto w-screen mb-11 mt-11 flex items-center justify-center overflow-hidden">
+    <div className=" h-auto w-screen mb-20 mt-20 flex items-center justify-center overflow-hidden">
       <div className="h-[90%] w-[82%] sml:w-[90%] ">
         {/* Title Part  */}
         <div className="flex justify-between ">
@@ -47,7 +47,7 @@ const Explore = () => {
 
         {/* Image Part */}
         <Swiper
-          className="mt-10 sml:mt-0 w-full"
+          className="mt-10 sml:mt-5 w-full"
           modules={[Navigation]}
           navigation={{
             nextEl: ".custom-next",
@@ -94,7 +94,7 @@ const Explore = () => {
             <div className="h-auto relative mt-10">
               <div className="relative w-[100%] h-[661px] sml:h-[456px] rounded-[26px] overflow-hidden">
                 <Image
-                  src={Explore1}
+                  src={Explore2}
                   alt="explore"
                   layout="fill"
                   objectFit="cover"
@@ -112,7 +112,25 @@ const Explore = () => {
             <div className="h-auto relative mt-10">
               <div className="relative w-[100%] h-[661px] sml:h-[456px] rounded-[26px] overflow-hidden">
                 <Image
-                  src={Explore1}
+                  src={Explore3}
+                  alt="explore"
+                  layout="fill"
+                  objectFit="cover"
+                  objectPosition="center"
+                  className="absolute"
+                />
+              </div>
+              <div className="absolute z-10 bottom-7 left-5 text-color-primary">
+                <h3 className="text-[28px]">Monument of Berlin</h3>
+                <p className="text-font-md">Berlin, Germany</p>
+              </div>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="h-auto relative mt-10">
+              <div className="relative w-[100%] h-[661px] sml:h-[456px] rounded-[26px] overflow-hidden">
+                <Image
+                  src={Explore4}
                   alt="explore"
                   layout="fill"
                   objectFit="cover"

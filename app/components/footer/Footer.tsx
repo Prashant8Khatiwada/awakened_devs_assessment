@@ -2,6 +2,10 @@ import React from "react";
 import NewsLetter from "./NewsLetter";
 import Logo from "../../../public/Logo.png";
 import Image from "next/image";
+import facebook from "../../../public/svg/facebook.png";
+import pinterest from "../../../public/svg/pinterest.png";
+import insta from "../../../public/svg/insta.png";
+import twitter from "../../../public/svg/Twitter.png";
 
 const Footer = () => {
   return (
@@ -56,11 +60,24 @@ const Footer = () => {
             <h2 className="text-font-md mid:text-font-sm">
               <b>Follow Us</b>
             </h2>
-            <ul className="text-font-sm mid:text-[16px]">
-              <li>+123 456 789</li>
-              <li>info@travellian.com</li>
-              <li>125, New Yourk, USA</li>
-            </ul>
+            <div className=" flex gap-2">
+              <Image
+                className="w-[20px] h-[20px]"
+                src={facebook}
+                alt="facebook"
+              />
+              <Image
+                className="w-[20px] h-[20px]"
+                src={pinterest}
+                alt="facebook"
+              />
+              <Image className="w-[20px] h-[20px]" src={insta} alt="facebook" />
+              <Image
+                className="w-[20px] h-[20px]"
+                src={twitter}
+                alt="facebook"
+              />
+            </div>
           </div>
         </div>
       </div>

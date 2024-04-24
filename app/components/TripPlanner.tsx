@@ -3,14 +3,13 @@ import travel1 from "../../public/travel/travel1.png";
 import travel2 from "../../public/travel/travel2.png";
 import travel3 from "../../public/travel/travel3.jpeg";
 import travel4 from "../../public/travel/travel4.png";
-
-// import Star from "../../../public/svg/star.png";
+import Star from "../../public/svg/star.png";
 import Image from "next/image";
 import SlidingTrip from "./slider/SlidingTrip";
 const TripPlanner = () => {
   return (
-    <div className=" h-auto w-screen mt-11 mb-24 flex items-center justify-center overflow-hidden">
-      <div className="h-[90%] w-[82%] flex sml:flex-col   gap-8 sml:w-[90%]">
+    <div className=" h-auto w-screen mt-20 mb-20 flex items-center justify-center overflow-hidden">
+      <div className="h-[90%] w-[82%] flex sml:flex-col gap-8 sml:w-[90%]">
         {/* Title Part  */}
         <div className="flex flex-col justify-between w-[40%] sml:w-[100%] py-5 px-3 pb-8 ">
           <div className="flex flex-col gap-5">
@@ -64,9 +63,17 @@ const TripPlanner = () => {
               <p className="flex justify-between items-center text-font-sm mid:text-[16px]">
                 GUIDED TOUR<span> $99/Day</span>
               </p>
-              <h2 className="text-[28px] lrg:text-font-sm">Paris City Tour</h2>
-              <div className="text-font-sm flex justify-between">
-                <div>Rating</div>
+              <h2 className="text-[28px] lrg:text-font-sm">
+                <b>Rome City Tour</b>
+              </h2>
+              <div className="text-font-sm flex justify-between mt-2">
+                <div className="flex gap-2">
+                  <Image src={Star} alt="star" />
+                  <Image src={Star} alt="star" />
+                  <Image src={Star} alt="star" />
+                  <Image src={Star} alt="star" />
+                  <Image src={Star} alt="star" />
+                </div>
                 <span> 7 Days Tour</span>
               </div>
             </div>
@@ -86,9 +93,17 @@ const TripPlanner = () => {
               <p className="flex justify-between items-center text-font-sm mid:text-[16px]">
                 GUIDED TOUR<span> $99/Day</span>
               </p>
-              <h2 className="text-[28px] lrg:text-font-sm">Paris City Tour</h2>
-              <div className="text-font-sm flex justify-between">
-                <div>Rating</div>
+              <h2 className="text-[28px] lrg:text-font-sm">
+                <b>Paris City Tour</b>
+              </h2>
+              <div className="text-font-sm flex justify-between mt-2">
+                <div className="flex gap-2">
+                  <Image src={Star} alt="star" />
+                  <Image src={Star} alt="star" />
+                  <Image src={Star} alt="star" />
+                  <Image src={Star} alt="star" />
+                  <Image src={Star} alt="star" />
+                </div>
                 <span> 7 Days Tour</span>
               </div>
             </div>
@@ -108,9 +123,17 @@ const TripPlanner = () => {
               <p className="flex justify-between items-center text-font-sm mid:text-[16px]">
                 GUIDED TOUR<span> $99/Day</span>
               </p>
-              <h2 className="text-[28px] lrg:text-font-sm">Paris City Tour</h2>
-              <div className="text-font-sm flex justify-between">
-                <div>Rating</div>
+              <h2 className="text-[28px] lrg:text-font-sm">
+                <b>Barcelona City Tour</b>
+              </h2>
+              <div className="text-font-sm flex justify-between mt-2">
+                <div className="flex gap-2">
+                  <Image src={Star} alt="star" />
+                  <Image src={Star} alt="star" />
+                  <Image src={Star} alt="star" />
+                  <Image src={Star} alt="star" />
+                  <Image src={Star} alt="star" />
+                </div>
                 <span> 7 Days Tour</span>
               </div>
             </div>
@@ -130,9 +153,17 @@ const TripPlanner = () => {
               <p className="flex justify-between items-center text-font-sm mid:text-[16px]">
                 GUIDED TOUR<span> $99/Day</span>
               </p>
-              <h2 className="text-[28px] lrg:text-font-sm">Paris City Tour</h2>
-              <div className="text-font-sm flex justify-between">
-                <div>Rating</div>
+              <h2 className="text-[28px] lrg:text-font-sm">
+                <b>Budapest City Tour</b>
+              </h2>
+              <div className="text-font-sm flex justify-between mt-2">
+                <div className="flex gap-2">
+                  <Image src={Star} alt="star" />
+                  <Image src={Star} alt="star" />
+                  <Image src={Star} alt="star" />
+                  <Image src={Star} alt="star" />
+                  <Image src={Star} alt="star" />
+                </div>
                 <span> 7 Days Tour</span>
               </div>
             </div>

@@ -48,7 +48,7 @@ const Pricing = () => {
         </div>
 
         {/* Images Part  */}
-        <div className="mt-20 flex gap-5   ">
+        <div className="mt-20 sml:mt-10 flex gap-5   ">
           <Swiper
             modules={[Navigation]}
             navigation={{
