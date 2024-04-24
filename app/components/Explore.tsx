@@ -129,10 +129,10 @@ const Explore = () => {
         </Swiper>
 
         <div className="text-color-primary hidden gap-5 self-center sml:flex mt-10">
-          <button className="custom-prev bg-color-secondary rounded-md px-5 py-3">
+          <button className="custom-prev bg-color-secondary rounded-md px-4 py-2">
             <Image src={leftArrow} alt="Left Arrow" />
           </button>
-          <button className="custom-next bg-color-btn-primary rounded-md px-5 py-3">
+          <button className="custom-next bg-color-btn-primary rounded-md px-4 py-2">
             <Image src={rightArrow} alt="Right Arrow" />
           </button>
         </div>

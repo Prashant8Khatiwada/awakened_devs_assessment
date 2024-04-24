@@ -121,10 +121,14 @@ const Travel = () => {
         </div>
 
         <div className="text-color-primary hidden gap-5 sml:flex  mt-10">
-          <button className="custom-prev bg-color-secondary rounded-md px-5 py-3">
-            <Image src={leftArrow} alt="Left Arrow" />
+          <button className="custom-prev bg-color-secondary rounded-md px-5 sml:px-4 py-3 sml:py-2">
+            <Image
+              className="xsm:w-[8px] xsm:h-[16px]"
+              src={leftArrow}
+              alt="Left Arrow"
+            />
           </button>
-          <button className="custom-next bg-color-btn-primary rounded-md px-5 py-3">
+          <button className="custom-next bg-color-btn-primary rounded-md px-5 sml:px-4 py-3 sml:py-2">
             <Image src={rightArrow} alt="Right Arrow" />
           </button>
         </div>
