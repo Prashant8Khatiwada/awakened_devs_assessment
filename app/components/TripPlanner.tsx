@@ -72,7 +72,6 @@ const TripPlanner = () => {
                   <Image src={Star} alt="star" />
                   <Image src={Star} alt="star" />
                   <Image src={Star} alt="star" />
-                  <Image src={Star} alt="star" />
                 </div>
                 <span> 7 Days Tour</span>
               </div>
@@ -98,7 +97,6 @@ const TripPlanner = () => {
               </h2>
               <div className="text-font-sm flex justify-between mt-2">
                 <div className="flex gap-2">
-                  <Image src={Star} alt="star" />
                   <Image src={Star} alt="star" />
                   <Image src={Star} alt="star" />
                   <Image src={Star} alt="star" />
@@ -132,7 +130,6 @@ const TripPlanner = () => {
                   <Image src={Star} alt="star" />
                   <Image src={Star} alt="star" />
                   <Image src={Star} alt="star" />
-                  <Image src={Star} alt="star" />
                 </div>
                 <span> 7 Days Tour</span>
               </div>
@@ -158,7 +155,6 @@ const TripPlanner = () => {
               </h2>
               <div className="text-font-sm flex justify-between mt-2">
                 <div className="flex gap-2">
-                  <Image src={Star} alt="star" />
                   <Image src={Star} alt="star" />
                   <Image src={Star} alt="star" />
                   <Image src={Star} alt="star" />

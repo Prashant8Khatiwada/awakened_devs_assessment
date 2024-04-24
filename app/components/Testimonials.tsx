@@ -171,7 +171,7 @@ const Testimonials = () => {
         </Swiper>
 
         {/* Button Part  */}
-        <div className="text-color-primary flex gap-5 self-baseline mt-10">
+        <div className="text-color-primary flex gap-5 w-[100%] justify-center lrg:justify-end mt-10">
           <button className="custom-prev bg-color-secondary rounded-md px-5 py-3">
             <Image src={leftArrow} alt="Left Arrow" />
           </button>

@@ -212,7 +212,7 @@ const Pricing = () => {
             </SwiperSlide>
           </Swiper>
         </div>
-        <div className=" text-color-primary hidden sml:flex gap-5 mt-10 self-end">
+        <div className=" text-color-primary hidden sml:flex gap-5 mt-10 self-end w-full justify-end">
           <button className="custom-prev bg-color-secondary rounded-md px-5 py-3">
             <Image src={leftArrow} alt="Left Arrow" />
           </button>
